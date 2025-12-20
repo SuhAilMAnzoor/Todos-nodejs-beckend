@@ -17,7 +17,7 @@ const userSchema = new Schema({
     }
 });
 
-                                // database name 'user'
+                                //database name 'user'
 const UserModel = database.model('user', userSchema);
 
 module.exports = UserModel;
