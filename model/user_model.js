@@ -11,13 +11,13 @@ const userSchema = new Schema({
         required: true,
         unique: true,
     },
-    passwoord:{
+    password:{
         type: String,
         required: true
     }
 });
 
-                                //database name 'user'
-const UserModel = database.model('user', userSchema);
+                                //collection name is 'users'
+const UserModel = database.model('users', userSchema);
 
 module.exports = UserModel;
